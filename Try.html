@@ -43,7 +43,7 @@
         }
         #top-image {
             margin-top: 20px;
-            max-width: 25%; /* Reduce el tamaño de la imagen al 25% del tamaño original */
+            max-width: 75%; /* Aumenta el tamaño de la imagen al 75% del tamaño original */
             height: auto;
         }
         .input-container {
@@ -57,6 +57,14 @@
             margin-bottom: 10px;
             border: 1px solid #ccc;
         }
+        .active-button {
+            background-color: #800000;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer; /* Agrega un cursor de selección */
+        }
         #forgot-password {
             margin-top: 20px;
             color: #800000;
@@ -67,6 +75,7 @@
             padding: 10px 20px;
             margin-top: 20px;
             border: none;
+            cursor: pointer; /* Agrega un cursor de selección */
         }
         #register-text {
             margin-top: 20px;
@@ -97,8 +106,8 @@
         <div class="input-container">
             <input type="password" placeholder="Contraseña">
         </div>
-        <div id="forgot-password">¿Olvidaste tu contraseña?</div>
-        <button id="login-button">INICIAR SESIÓN</button>
+        <div id="forgot-password" class="active-button">¿Olvidaste tu contraseña?</div>
+        <button id="login-button" class="active-button">INICIAR SESIÓN</button>
         <div id="register-text">¿No tienes una cuenta? <a href="#" id="register-link">Regístrate</a></div>
     </div>
 </body>
