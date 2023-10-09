@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #fixed-strip {
+            background-color: #fff;
+            color: #000;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            border: 1px solid #000;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+        #image-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 5px;
+        }
+        .fixed-image {
+            max-height: 50px;
+            max-width: 100%;
+        }
+        #center-rectangle {
+            background-color: #fff;
+            width: 60%;
+            margin: 80px auto 0;
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra al rectángulo */
+        }
+        #top-image {
+            margin-top: 20px;
+            max-width: 25%; /* Reduce el tamaño de la imagen al 25% del tamaño original */
+            height: auto;
+        }
+        .input-container {
+            margin-top: 20px;
+            text-align: left;
+            padding: 10px;
+        }
+        .input-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+        #forgot-password {
+            margin-top: 20px;
+            color: #800000;
+        }
+        #login-button {
+            background-color: #800000;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+        }
+        #register-text {
+            margin-top: 20px;
+            color: #000;
+        }
+        #register-link {
+            color: #800000;
+        }
+    </style>
+</head>
+<body>
+    <div id="fixed-strip">
+        <div id="image-container">
+            <img class="fixed-image" src="SSEdoMex.png" alt="Imagen 1">
+            <img class="fixed-image" src="C5.png" alt="Imagen 2">
+            <img class="fixed-image" src="PoliciaGenero.png" alt="Imagen 3">
+            <img class="fixed-image" src="AlertaGenero.png" alt="Imagen 4">
+            <img class="fixed-image" src="FiscaliaGJ.png" alt="Imagen 5">
+            <img class="fixed-image" src="SecretariaMujeres.png" alt="Imagen 6">
+        </div>
+    </div>
+    <div id="center-rectangle">
+        <img id="top-image" src="LogoMujSeguras.png" alt="Imagen en la parte superior">
+        <hr>
+        <div class="input-container">
+            <input type="text" placeholder="Teléfono, usuario o correo electrónico">
+        </div>
+        <div class="input-container">
+            <input type="password" placeholder="Contraseña">
+        </div>
+        <div id="forgot-password">¿Olvidaste tu contraseña?</div>
+        <button id="login-button">INICIAR SESIÓN</button>
+        <div id="register-text">¿No tienes una cuenta? <a href="#" id="register-link">Regístrate</a></div>
+    </div>
+</body>
+</html>
